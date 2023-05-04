@@ -1,0 +1,21 @@
+.capability {
+  max-width: 780px;
+}
+
+.capability .row {
+  flex-direction: column;
+}
+.capability .row .col {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+/*  row */
+
+.capability .row-2 {
+  flex-direction: column;
+}
+.capability .row-2 .col-2 {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}

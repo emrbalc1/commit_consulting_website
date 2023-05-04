@@ -1,0 +1,49 @@
+header img {
+  max-width: 250px;
+}
+
+.menu-item {
+  padding: 1rem 0;
+}
+.menu.active {
+  top: 110px;
+}
+
+/* section hero */
+
+section.hero {
+  padding: 0 1rem;
+}
+
+section.hero div h2 {
+  font-size: 2rem;
+  top: 1rem;
+  left: 2rem;
+}
+
+/* section capability */
+.capability{
+  padding: 0 1rem;
+}
+.capability .row {
+  flex-direction: column;
+}
+.capability .row .col {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+.capability .row .col:hover {
+  transform: none !important;
+}
+/*  row */
+
+.capability .row-2 {
+  flex-direction: column;
+}
+.capability .row-2 .col-2 {
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+.capability .row-2 .col-2:hover {
+  transform: none !important;
+}

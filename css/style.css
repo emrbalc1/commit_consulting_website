@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+  font-family: 'Open Sans', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --first-blue: #0054aa;
+  --second-blue: #0677ba;
+  --orange: #ffc000;
+  --white: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.menu {
+  display: flex;
+  gap: 2rem;
+}
+.menu-item {
+  list-style: none;
+}
+.menu-item a {
+  color: var(--first-blue);
+  font-size: 1.5rem;
+}
+.menu-item a:hover {
+  color: var(--second-blue);
+  transition: .3s;
+}
+.hamburger {
+  display: none;
+}
+
+/* Section hero */
+
+section.hero {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 2rem;
+} 
+section.hero div img {
+  border-radius: 30px;
+}
+section.hero div h2{
+  width: 300px;
+  font-size: 4rem;
+  position: absolute;
+  top: 5rem;
+  left: 7rem;
+  color: var(--first-blue);
+}
+
+/* section capability */
+
+.capability {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.capability h3, li {
+  color: var(--first-blue);
+}
+.capability .col-head {
+  margin: 0 auto;
+}
+.capability .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.capability .row .col {
+  max-width: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 50px;
+  box-shadow: 1px 1px 10px;
+  cursor: pointer;
+}
+.capability .row .col img {
+  margin-bottom: 1rem;
+}
+.capability .row .col:hover {
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+/* row-2 */
+
+.capability .row-2 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.capability .row-2 .col-2 {
+  max-width: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 50px;
+  box-shadow: 1px 1px 10px;
+  cursor: pointer;
+}
+.capability .row-2 .col-2 img {
+  margin-bottom: 1rem;
+}
+.capability .row-2 .col-2:hover {
+  transform: scale(1.1);
+  transition: .3s;
+}
+
+/* Section About us */
+
+.about-us {
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.about-us h2 {
+  font-size: 4rem;
+  color: var(--orange);
+  margin-bottom: 3rem;
+}
+.about-us p {
+  color: var(--first-blue);
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+/* section contact us */
+
+.contact {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.contact h2 {
+  font-size: 4rem;
+  color: var(--orange);
+  margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contactbox form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactbox form #name {
+  max-width: 300px;
+  color: var(--first-blue);
+  outline: none;
+  border: none;
+  background-color: #f3f3f3;
+  padding: 1rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+.contactbox form #email {
+  max-width: 300px;
+  color: var(--first-blue);
+  outline: none;
+  border: none;
+  background-color: #f3f3f3;
+  padding: 1rem;
+  border-radius: 50px;
+  margin-bottom: 1rem;
+}
+.contactbox form #message {
+  max-width: 600px;
+  color: var(--first-blue);
+  resize: none;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 1rem;
+  background-color: #f3f3f3;
+  margin-bottom: 1rem;
+}
+.contactbox form ::placeholder {
+  color: var(--first-blue);
+  font-size: 1rem;
+}
+.contactbox form button {
+  max-width: 120px;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  background-color: var(--orange);
+  color: var(--first-blue);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: .3s ease;
+}
+.contactbox form button:hover {
+  background-color: var(--first-blue);
+  color: var(--orange);
+}
+
+/* footer */
+
+footer {
+  background-color: var(--first-blue);
+  padding: 4rem;
+}
+
+footer p {
+  color: var(--white);
+  font-size: 1.5rem;
+}
+
+footer .social-media {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer .social-media div {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+footer .social-media div a {
+  display: flex;
+  font-size: 1.5rem;
+  color: var(--white);
+  background-color: var(--orange);
+  padding: 15px;
+  border-radius: 50%;
+}
+footer .social-media div a:hover {
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
